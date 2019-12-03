@@ -1,24 +1,11 @@
-# README
+# Webapp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails Tutorial 1週目
 
-Things you may want to cover:
+* Ruby version　2.6.5
 
-* Ruby version
+* Rails version 6.0.1
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Database(Development) SQLite 3
+          (Production)  MySQL(予定)
+          
