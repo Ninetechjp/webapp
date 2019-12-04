@@ -3,8 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
-# Use mysql as the database for Active Record
-# gem 'mysql2', '>= 0.4.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.0'
 # Use sqlite3 as the database for Active Record
@@ -28,7 +26,6 @@ gem 'uglifier',     '>= 3.2.0'
 gem 'bootstrap-sass', '> 3.3.7'
 
 
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -42,6 +39,12 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rubocop-rails'
   gem 'sqlite3', '>= 1.3.13'
+  # Gem 'Pry' install
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-byebug'
+  gem 'pry-stack_explorer'
+
 end
 
 group :development do
@@ -68,9 +71,13 @@ group :test do
 
 end
 
-#group :production do
-#  gem 'mysql2'
-#end
+group :production do
+  # Use postgresql as the database for Active Record
+  gem 'pg', '~> 1.1', '>= 1.1.4'
+  # Use mysql as the database for Active Record
+  # gem 'mysql2', '~> 0.5.3'
+
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
