@@ -21,9 +21,9 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+gem 'bootstrap-sass', '> 3.3.7'
 gem 'jquery-rails', '>= 4.3.1'
 gem 'uglifier',     '>= 3.2.0'
-gem 'bootstrap-sass', '> 3.3.7'
 
 
 # Use Active Storage variant
@@ -40,9 +40,9 @@ group :development, :test do
   gem 'rubocop-rails'
   gem 'sqlite3', '>= 1.3.13'
   # Gem 'Pry' install
-  gem 'pry-rails'
-  gem 'pry-doc'
   gem 'pry-byebug'
+  gem 'pry-doc'
+  gem 'pry-rails'
   gem 'pry-stack_explorer'
 
 end
@@ -61,11 +61,10 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-
-  gem 'minitest-reporters',       '>= 1.1.14'
-  gem 'rails-controller-testing', '>= 1.0.2'
   gem 'guard',                    '2.13.0'
   gem 'guard-minitest',           '2.4.4'
+  gem 'minitest-reporters',       '>= 1.1.14'
+  gem 'rails-controller-testing', '>= 1.0.2'
 
   gem 'webdrivers'
 
