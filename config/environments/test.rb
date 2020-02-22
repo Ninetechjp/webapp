@@ -45,6 +45,7 @@ Rails.application.configure do
   # ActionMailer::Base.deliveries array.
   # noinspection RubyResolve,RubyResolve
   config.action_mailer.delivery_method = :test
+  config.action_mailer.default_url_options = { host: 'example.com' }
 
   # Print deprecation notices to the stderr.
   # noinspection RubyResolve,RubyResolve
