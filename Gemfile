@@ -27,7 +27,7 @@ gem 'uglifier',     '>= 3.2.0'
 gem 'faker',         '>= 1.7.3'
 gem 'will_paginate',           ' >= 3.1.6'
 gem 'bootstrap-will_paginate', ' >= 1.0.0'
-
+gem 'unicorn'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
