@@ -37,3 +37,5 @@ yarn-debug.log*
 # Ignore IDE config folder.
 .idea
 /.idea/vagrant.xml
+app/.DS_Store
+app/views/account_activations/
