@@ -29,6 +29,8 @@ gem 'nokogiri', '>= 1.10.8'
 gem 'uglifier',     '>= 3.2.0'
 gem 'unicorn'
 gem 'will_paginate',           ' >= 3.1.6'
+gem 'carrierwave', '>= 1.2.2'
+gem 'mini_magick', '>= 4.7.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -79,8 +81,8 @@ group :production do
   # Use postgresql as the database for Active Record
   gem 'pg', '~> 1.1', '>= 1.1.4'
   # Use mysql as the database for Active Record
-  # gem 'mysql2', '~> 0.5.3'
-
+  # gem 'mysql2', '~> 0.5.4'
+  gem 'fog', '> 1.42'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
